@@ -8,6 +8,7 @@ Backend
 
 ```
  Clone the repo using Github CLI--> git clone https://github.com/AyRawat/Apparel-Inventory-Backend.git
+ or if already cloned Skip the above step
  cd APPAREL_INVENTORY_BACKEND
  Install the dependencies--> npm i
  Run the Project --> npm start
