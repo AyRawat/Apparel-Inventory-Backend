@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import cors from 'cors';
 import helmet from 'helmet';
 
-const routes = require('./routes/routes.ts');
+import {router} from './routes/route';
 const app = express();
 
 app.use(helmet());
@@ -22,9 +22,11 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
-app.use('/api' , routes);
+app.use('/api' , router);
+
 
 app.listen(3000,()=>{
     console.log('The application is listening on port 3000');
 })
 
+module.exports ={app};
